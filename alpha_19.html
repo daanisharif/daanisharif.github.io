@@ -38,24 +38,25 @@
 
 
 	.container {
-		width: 100%;
+		min-width: 100%;
+        max-width: 100%;
         
 	}
 
 	.c1 {
 		/*background: #F7D92D;40BBBF;*/
 		color: white;
-        height: 100%;
+        min-height: 100%;
         background-image: url(./img/universe.jpg);
         background-size: cover;
 	}
     
     .c1 h1 { 
         /* color: #b9b9b9; #563E7D;#368FA1; /*#4D1947;*/
-        color: rgba(123,109,150,0.5);
+        color: rgba(123,109,150,1);
         padding-top: 20%;
-        font-size: 200px;
-        font-family: 'Tangerine', cursive;
+        font-size: 100px;
+        font-family: 'Poiret One', cursive;
         transition: color .4s ease;
     }
             
@@ -86,7 +87,6 @@
 	.c3 {
 		background: rgba(0,0,0,0.0);#F0EEEA;
 		color: black;
-        padding: 5%;
 	}
     
         
@@ -107,8 +107,8 @@
         padding: 2%;
     }
         
-    .c5 i { color: #BABABA; #A5F406; padding: 1%; }
-    .c5 i:hover { color: white; }
+    .c5 i { color: #F9F9F9; #A5F406; padding: 1%; transition: color .4s ease; }
+    .c5 i:hover { color: #38A9F1; }
     
 
 	body {
@@ -153,6 +153,8 @@
         
     button { font-family: 'Raleway'; }
     .button { font-family: 'Raleway'; }  
+    
+        
     </style>
 	
 
@@ -163,28 +165,52 @@
       
     <div class="container c1">
         <div class="row">
-            <div class="large-centered text-center">
-                <h1 class="text-center header">Danish Arif</h1>
+            <div class="medium-centered text-center"><a name="home"></a>
+                    <h1 data-magellan-destination: "home">
+                    Danish Arif</h1>
 <!--                <h2 class="subheader text-center"><small> Handcrafted brand identities for hard-working businesses.</small> </h2> --> <br>
-                <div class="row">
-  <div class="large-6 large-centered columns">
-    <ul class="button-group even-4">
-      <li><a href="#home" class="button">Home</a></li>
+  <div class="medium-6 medium-centered columns">
+    <ul class="button-group even-3">
       <li><a href="#services" class="button">Services</a></li>
       <li><a href="#portfolio" class="button">Portfolio</a></li>
       <li><a href="#contact" class="button">Contact</a></li>
     </ul>
   </div>
-</div>
             </div>
         </div>
     </div>
-        
+        <div data-magellan-expedition="fixed">
+<nav class="top-bar" data-topbar>
+<ul class="title-area">
+    <li class="name">
+      <h1><a href="#">Danish Arif   </a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+    <li class="divider"></li>
+    <li class="divider"></li>
+    <li data-magellan-arrival="home"><a href="#home">Home</a></li>
+    <li class="divider"></li>
+    <li data-magellan-arrival="services"><a href="#services">Services</a><li>
+    <li class="divider"></li>
+    <li data-magellan-arrival="portfolio"><a href="#portfolio">Portfolio</a><li>
+    <li class="divider"></li>
+    <li data-magellan-arrival="contact"><a href="#contact">Contact</a><li>
+    <li class="divider"></li>
+    <li data-magellan-arrival="second"><a href="#second"></a><li>
+    </ul>
+  <nav>
+</div>
         
         <div class="container c2"> <!-- C 2  (2nd Column) S T A R T S    H E R E   -->
 
-            <div class="row">
-                <div class="large-centered text-center">
+            <div class="row"><a name="services"></a>
+                    <h1 class="text-center" data-magellan-destination: "services"></h1>
+                <div class="medium-centered text-center">
                  
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis malesuada lectus, ac condimentum ipsum.
                         Mauris sollicitudin fringilla molestie. Proin scelerisque sapien id libero lobortis cursus. Proin auctor augue 
@@ -264,15 +290,11 @@
         <div class="container c3">  <!-- C 3 (3RD COLUMN) S T A R T S   H E R E   -->
             
             <div class="row">
-                <div class="large-centered">
-                    <h1 class="text-center"> <a name="js"></a> Portfolio / Comments </h1>
+                <div class="large-centered"><a name="portfolio"></a>
+                    <h1 class="text-center" data-magellan-destination: "portfolio">  Portfolio / Comments </h1>
                     <p class="text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis malesuada lectus, ac condimentum 
-                        ipsum. Mauris sollicitudin fringilla molestie. Proin scelerisque sapien id libero lobortis cursus. Proin auctor augue lectus,
-                        semper blandit nisl venenatis eget. Phasellus aliquam diam ante. Curabitur auctor porta lacus, in dapibus erat. Ut sollicitudin
-                        erat aliquam egestas lacinia. Suspendisse potenti. Vestibulum interdum felis in tempus malesuada. Vivamus fringilla iaculis nisi,
-                        sit amet venenatis ligula interdum eu. Proin ullamcorper non arcu sit amet pretium. Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit. Maecenas consequat porta sapien, sit amet consequat lorem posuere ac. Sed mattis nisl non semper pretium. Aliquam 
-                        purus turpis, adipiscing sed lorem nec, gravida tristique ipsum.
+                        ipsum. Mauris sollicitudin fringilla molestie. Proin scelerisque sapien id libero lobortis cursus. Proin auctor augue 
+                        lectus, semper blandit nisl venenatis eget.
                     </p>
                 </div>
             </div>
@@ -323,49 +345,49 @@
             
                 
                 <ul class="example-orbit" data-orbit>
-  <li>
-    <img src="./portfolio/Responsive-showcase-presentation%20-%20Cosmi's.jpg" alt="slide 1" />
-    <div class="orbit-caption">
-      Caption One.
-    </div>
-  </li>
-  <li class="active">
-    <img src="./portfolio/cosmisHoagies.jpg" alt="slide 2" />
-    <div class="orbit-caption">
-      Caption Two.
-    </div>
-  </li>
-  <li>
-    <img src="./portfolio/phillyTacosBanner.jpg" alt="slide 3" />
-    <div class="orbit-caption">
-      Caption Three.
-    </div>
-  </li>
-</ul>    
-            
-            
+                  <li>
+                    <img src="./portfolio/fit/test%20(1).jpg" alt="slide 1" />
+                    <div class="orbit-caption">
+                      Caption One.
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./portfolio/fit/test%20(2).jpg" alt="slide 3" />
+                    <div class="orbit-caption">
+                      Caption Three.
+                    </div>
+                  </li>
+                  <li class="active">
+                    <img src="./portfolio/fit/test%20(3).jpg" alt="slide 2" />
+                    <div class="orbit-caption">
+                      Caption Two.
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./portfolio/fit/test%20(4).jpg" alt="slide 3" />
+                    <div class="orbit-caption">
+                      Caption Three.
+                    </div>
+                  </li>
+                </ul>                
             </div>
-            
-            
-            
-            
         </div>
     
     <!--<div class="container c4">   A N O T H E R   C O L U M N   I F   R E Q U I R E D   </div>-->
-    
-        <h1 class="text-center"> Hola! </h1>
+        <a name="contact"></a>
+        <h1 class="text-center" data-magellan-destination: "contact">
+         Hola! </h1>
         <p class="text-center"> I would love to talk. Let's get in touch: </p>
     
         
         <div class="container c5"> <!-- C 5   S T A R T S   H E R E   (AKA  F O O T E R ) --> 
             <div class="row">
                 <div class="medium-6 column text-center">
-                    <!--  <h4>Phone</h4> -->
+                    
                     <i class="fi-telephone smallest-icons buzz"></i> (267) 616 4523
 <br>                
                     <i class="fi-mail smallest-icons wobble-bottom"></i> danish989@gmail.com  
                
-                    <!--<h4>Flickiyaan</h4>     -->
                 </div>
                 
                 <div class="medium-6 column text-center">
@@ -381,12 +403,8 @@
                 </div>
             </div>
         </div>
-            
-        <!-- Twitter
-             GitHub
-             
-
--->
+       
+    
 
 
 		<script src="js/vendor/jquery.js"></script> 
