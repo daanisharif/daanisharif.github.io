@@ -2014,7 +2014,7 @@ meta.foundation-mq-topbar {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   transition: all 200ms ease-out; }
   .th:hover, .th:focus {
-    box-shadow: 0 0 6px 1px rgba(86, 62, 125, .8); /*(0, 140, 186, 0.5);*/ }
+    box-shadow: 0 0 6px 1px rgba(0, 140, 186, 0.5); /*(0, 140, 186, 0.5);*/ }
   .th.radius {
     border-radius: 3px; }
 
@@ -2600,11 +2600,11 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #008cba;
+  color: #8FC7FF;008cba;
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #0078a0; }
+    color: white; #008cba; }
   a img {
     border: none; }
 
